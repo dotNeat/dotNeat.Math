@@ -119,7 +119,7 @@ namespace dotNeat.Math.Matrices
         public TEntrieValue this[ulong row, ulong column]
         {
             get => this._entries[(row * this._dimensions.Columns) + column];
-            internal set => this._entries[(row * this._dimensions.Columns) + column] = value;
+            set => this._entries[(row * this._dimensions.Columns) + column] = value;
         }
 
         public MatrixEntrie<TEntrieValue> GetMatrixEntrie(ulong row, ulong column)

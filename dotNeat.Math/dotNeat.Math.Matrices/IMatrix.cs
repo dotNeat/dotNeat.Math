@@ -9,7 +9,7 @@
 
         ulong TotalEntries { get; }
         
-        TEntrieValue this[ulong row, ulong column] { get; internal set; }
+        TEntrieValue this[ulong row, ulong column] { get; set; }
         
         MatrixEntrie<TEntrieValue> GetMatrixEntrie(ulong row, ulong column);
         
